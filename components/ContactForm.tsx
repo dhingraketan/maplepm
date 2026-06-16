@@ -143,7 +143,7 @@ export function ContactForm({
                 autoComplete="tel"
                 required
                 disabled={status === "loading"}
-                placeholder="(604) 555-0142"
+                placeholder="(778) 723-2529"
               />
             </div>
             <div className={styles.row}>

@@ -11,8 +11,8 @@ export type Service = {
 
 export const COMPANY = {
   name: "Maple Property Maintenance",
-  phone: "(604) 555-0142",
-  phoneHref: "tel:+16045550142",
+  phone: "(778) 723-2529",
+  phoneHref: "tel:+17787232529",
   email: "info@maplepm.ca",
   emailHref: "mailto:info@maplepm.ca",
   serviceArea:
