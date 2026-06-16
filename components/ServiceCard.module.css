@@ -1,0 +1,88 @@
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-grey-200);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: #e2e8f0;
+}
+
+.mediaLink {
+  display: block;
+}
+
+.media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.04);
+}
+
+.body {
+  padding: 1.35rem 1.35rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  flex: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.title a {
+  color: var(--color-navy);
+  transition: color 0.2s ease;
+}
+
+.title a:hover {
+  color: var(--color-orange-deep);
+}
+
+.desc {
+  margin: 0;
+  color: var(--color-grey-700);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.learn {
+  margin-top: 0.25rem;
+  font-weight: 700;
+  color: var(--color-orange-deep);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: fit-content;
+}
+
+.learn:hover .arrow {
+  transform: translateX(3px);
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}

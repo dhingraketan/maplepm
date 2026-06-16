@@ -1,0 +1,111 @@
+.footer {
+  background: var(--color-navy-deep);
+  color: rgba(255, 255, 255, 0.88);
+  margin-top: 4rem;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1.25rem 2rem;
+  display: grid;
+  gap: 2.25rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .inner {
+    grid-template-columns: 1.4fr 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.colBrand {
+  max-width: 360px;
+}
+
+.brandRow {
+  display: inline-flex;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.05);
+}
+
+.tagline {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.65;
+}
+
+.heading {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fdba74;
+  font-family: var(--font-body), sans-serif;
+  font-weight: 700;
+}
+
+.headingSpaced {
+  margin-top: 1.75rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.list a {
+  color: rgba(255, 255, 255, 0.88);
+  transition: color 0.2s ease;
+}
+
+.list a:hover {
+  color: #fff;
+}
+
+.areaText {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.65;
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.contactList a {
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 600;
+}
+
+.contactList a:hover {
+  color: #fdba74;
+}
+
+.bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.25rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.bottom p {
+  margin: 0;
+}
